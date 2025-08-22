@@ -1,23 +1,11 @@
-const Notes = [{
-  id: "",
-  title: "Lecture Notes",
-  body: "This is the body of the lecture notes.",
-  date: "2023-10-01",
-}]
-
-
 const newId = Date.now().toString() + Math.random().toString().slice(2);
+const formatedDate = new Date().toISOString(); // Get today's date in YYYY-MM-DD format
 
-  // Create the new note object
-  const newNote = {
-    id: newId,
-    title: title,
-    body: body,
-    date: new Date().toISOString().slice(0, 10), // Get today's date in YYYY-MM-DD format
-  };
+// Create the new note object
+export const Note = [{
+  id: newId,
+  title: 'title',
+  body: 'body',
+  date: formatedDate 
+}];
 
-  // Add the new note to the Notes array
-  Notes.push(newNote);
-
-  console.log("New note added:", newNote);
-  console.log("All notes:", Notes);
