@@ -9,3 +9,7 @@ export const Note = [{
   date: formatedDate 
 }];
 
+export function sortNotesByDate(Note) {
+  return Note.sort((a, b) => new Date(b.date) - new Date(a.date));
+}
+
