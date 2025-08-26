@@ -1,4 +1,5 @@
-import {Note, sortNotesByDate} from './NotesDATA.js';
+import {sortedNotes} from './NotesDATA.js';
+import { renderNotes } from './NotesVIEW.js';
 
-console.log("New note added:", Note);
-console.log("Notes sorted by date:", sortNotesByDate(Note));
+renderNotes();
+console.log(sortedNotes);
